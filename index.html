@@ -471,14 +471,16 @@
             </div>
         </div>
 
-        <p class="footer-modal-title">Підпишіться на розсилку</p>
-        <form class="footer-modal">
-            <label class="footer-form-label">
-                <textarea name="user-email" id="" class="footer-modal-email" placeholder="E-mail"></textarea>
-                <button type="submit" class="footer-modal-submit">Підписатися</button>
-            </label>
-        </form>
-
+        <div class="footer-modal-box">
+            <p class="footer-modal-title">Підпишіться на розсилку</p>
+            <form class="footer-modal">
+                <label class="footer-form-label">
+                    <input type="text" name="user-email" class="footer-modal-email" placeholder="E-mail" required
+                        pattern="^[a-zA-Zа-яА-Я]+" minlength="2"></input>
+                    <button type="submit" class="footer-modal-submit">Підписатися</button>
+                </label>
+            </form>
+        </div>
 
     </footer>
 

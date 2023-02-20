@@ -919,6 +919,56 @@ html {
     fill: var(--section-backghround-color);
 }
 
+/*********************FOOTER-EMAIL*********************/
+
+.footer-modal-box {
+    display: flex;
+    margin-left: auto;
+}
+
+.footer-modal-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--section-backghround-color);
+}
+
+.footer-modal {
+    display: flex;
+}
+
+.footer-modal-title {
+    margin-bottom: 20px;
+}
+
+.footer-modal-email {
+
+
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: var(--footer-color);
+    border-radius: 4px;
+}
+
+
+.footer-modal-submit {
+    width: 200px;
+    height: 50px;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+/*********************FOOTER-EMAIL********************/
+
+
 /* Портфоліо */
 
 .page-header {
