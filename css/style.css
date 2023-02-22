@@ -958,10 +958,9 @@ html {
 
 .footer-modal-icon {
     display: block;
-    position: absolute;
     top: 50%;
     left: 12px;
-    transform: translateY(-50%);
+    position: absolute;
     color: var(--primery-text-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -969,12 +968,22 @@ html {
 }
 
 .footer-modal-submit {
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
     width: 200px;
     height: 50px;
     border: none;
+    border-radius: 4px;
+    color: var(--section-backghround-color);
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, background;
 }
 
 /*********************FOOTER-EMAIL********************/
