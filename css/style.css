@@ -953,22 +953,26 @@ html {
 }
 
 .footer-position-icon {
+    display: flex;
     position: relative;
 }
 
 .footer-modal-icon {
     display: block;
     top: 50%;
-    left: 12px;
-    position: absolute;
-    color: var(--primery-text-color);
+    margin-left: 10px;
+    fill: var(--section-backghround-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
+    transition-property: fill;
 }
 
 .footer-modal-submit {
     display: flex;
+    justify-content: inherit;
+    align-items: center;
+    margin-left: 12px;
+    padding: 10px 28px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
