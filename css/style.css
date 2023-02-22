@@ -921,10 +921,7 @@ html {
 
 /*********************FOOTER-EMAIL*********************/
 
-.footer-modal-box {
-    display: flex;
-    margin-left: auto;
-}
+.footer-modal-box {}
 
 .footer-modal-title {
     font-family: 'Roboto';
@@ -946,21 +943,35 @@ html {
 }
 
 .footer-modal-email {
-
-
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     background-color: var(--footer-color);
+    color: var(--section-backghround-color);
     border-radius: 4px;
 }
 
+.footer-position-icon {
+    position: relative;
+}
+
+.footer-modal-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: var(--primery-text-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+}
 
 .footer-modal-submit {
     width: 200px;
     height: 50px;
-
+    border: none;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -1372,10 +1383,10 @@ html {
     transition-property: border;
 }
 
-/* .modal-form-input-wrapper:hover,
+.modal-form-input-wrapper:hover,
 .modal-form-input-wrapper:focus {
     fill: var(--blue-color);
-} */
+}
 
 .modal-form-input-wrapper {
     position: relative;
