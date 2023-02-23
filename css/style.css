@@ -872,7 +872,7 @@ html {
 
 
 .social-media {
-
+    display: flex;
     fill: var(--section-backghround-color);
     color: var(--section-backghround-color);
 }
@@ -921,7 +921,9 @@ html {
 
 /*********************FOOTER-EMAIL*********************/
 
-.footer-modal-box {}
+.footer-modal-box {
+    margin-left: auto;
+}
 
 .footer-modal-title {
     font-family: 'Roboto';
@@ -936,6 +938,7 @@ html {
 
 .footer-modal {
     display: flex;
+    position: relative;
 }
 
 .footer-modal-title {
@@ -952,10 +955,7 @@ html {
     border-radius: 4px;
 }
 
-.footer-position-icon {
-    display: flex;
-    position: relative;
-}
+
 
 .footer-modal-icon {
     display: block;
