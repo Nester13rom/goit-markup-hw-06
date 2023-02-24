@@ -951,6 +951,7 @@ html {
 .footer-modal-email {
     width: 358px;
     height: 50px;
+    padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     background-color: var(--footer-color);
@@ -958,7 +959,12 @@ html {
     border-radius: 4px;
 }
 
-
+.footer-modal-email:focus,
+.footer-modal-email:hover {
+    outline: none;
+    cursor: pointer;
+    border-color: var(--blue-color);
+}
 
 .footer-modal-icon {
     display: block;
@@ -981,7 +987,6 @@ html {
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    width: 200px;
     height: 50px;
     border: none;
     border-radius: 4px;
@@ -1254,7 +1259,6 @@ html {
     padding: 40px;
     transform: translate(-50%, -50%);
     width: 528px;
-    height: 581px;
     background-color: var(--section-backghround-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -1300,9 +1304,11 @@ html {
 .modal-title {
     display: block;
     text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
     font-weight: 700;
     Size: 20px;
-    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 .modal-form {
@@ -1360,7 +1366,6 @@ html {
     align-items: center;
     font-size: 14px;
     margin-bottom: 30px;
-
 }
 
 .modal-label-send {
@@ -1374,10 +1379,12 @@ html {
     display: block;
     width: 16px;
     height: 15px;
+    margin-right: 7px;
+    background-position: 50% 50%;
     border-radius: 2px;
     border: 2px solid var(--primery-text-color);
-    cursor: pointer;
-    margin-right: 7px;
+    box-shadow: 0 0 0 0.1em var(--blue-color) cursor: pointer;
+
 
 }
 
@@ -1425,6 +1432,7 @@ html {
 
 .modal-form-check:checked+.modal-form-check-desc::before {
     background-color: var(--blue-color);
+    border-color: var(--blue-color);
     background-image: url(../images/Vector.svg);
 }
 
