@@ -867,12 +867,15 @@ html {
     background-color: var(--footer-color);
 }
 
+.footer-container {
+    display: flex;
+}
+
 /*footer icon*/
 
 
 
 .social-media {
-    display: flex;
     fill: var(--section-backghround-color);
     color: var(--section-backghround-color);
 }
